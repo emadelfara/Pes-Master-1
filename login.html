@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <title>login Pes Master</title>
+  <!-- TemplateEndEditable -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
+  <!-- TemplateParam name="Header" type="boolean" value="true" -->
+  <!-- TemplateParam name="this" type="boolean" value="true" -->
+  <!-- TemplateParam name="UserName" type="text" value="textfield1" -->
+  <!-- TemplateParam name="Password" type="text" value="textfield1" -->
+  <!-- TemplateParam name="ButtonName" type="text" value="Submit" -->
+  <!-- TemplateParam name="ButtonLabel" type="text" value="Sign In" -->
+  <!-- TemplateParam name="FormAction" type="text" value="" -->
+  <!-- TemplateParam name="FormMethod" type="text" value="post" -->
+  <!-- TemplateParam name="FormName" type="text" value="form1" -->
+  <style type="text/css">
+    <!--
+    //menu constructor
+    function menu(allitems, thisitem, startstate) {
+      callname="gl"+thisitem;
+      divname="subglobal"+thisitem;
+      this.numberofmenuitems=allitems;
+      this.caller=document.getElementById(callname);
+      this.thediv=document.getElementById(divname);
+      this.thediv.style.visibility=startstate;
+    }
+
+    //menu methods
+    function ehandler(event, theobj) {
+      for (var i=1; i<=theobj.numberofmenuitems; i++) {
+        var shutdiv=eval("menuitem" +i+".thediv");
+        shutdiv.style.visibility="hidden";
+      }
+
+      theobj.thediv.style.visibility="visible";
+    }
+
+    function closesubnav(event) {
+      if ((event.clientY <48)||(event.clientY > 107)) {
+        for (var i=1; i<=numofitems; i++) {
+          var shutdiv=eval('menuitem' +i+'.thediv');
+          shutdiv.style.visibility='hidden';
+        }
+      }
+    }
+
+    .elfara {
+      background-image: url(bg.PNG);
+    }
+
+    .sub {
+      background-image: url(bg2.png);
+    }
+
+    .TitleColor {
+      margin: 10%;
+      width: 80%;
+      border-style: double;
+      padding: 10px;
+    }
+
+    .style3 {
+      font-weight: bold;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #ff0000;
+      text-align: center;
+    }
+
+    .style1 {
+      font-family: Verdana, Arial, Helvetica, sans-serif
+    }
+
+    .style2 {
+      font-family: Georgia, "Times New Roman", Times, serif
+    }
+
+    .style5 {
+      font-weight: bold;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #000000;
+      text-align: center;
+    }
+    -->
+  </style>
+</head>
+
+<body class="sub">
+  <br>
+  <div>
+    <form name="@@(FormName)@@" method="@@(FormMethod)@@" action="@@(FormAction)@@">
+      <table width="300" border="0" cellspacing="0" cellpadding="1" class="TitleColor" align="center">
+        <tr style="vertical-align: top; text-align: center;">
+          <td width="1298" align="center">
+            <table class="elfara" width="18%" height="257" border="10" cellpadding="4" cellspacing="0">
+              <tr class="HeaderColor">
+                <td width="1290" style="vertical-align: top;">
+                  <!-- TemplateBeginEditable name="Title" -->
+                  <h3 align="center" class="style1">Sign In</h3>
+                  <!-- TemplateEndEditable -->
+              <tr style="vertical-align: top">
+                <td class="TitleColor">
+                  <!-- TemplateBeginEditable name="Title3" --> <span class="style2"> <span class="style1">
+                      <label for="username">
+                        <div align="center"><strong>User Name</strong></div>
+                      </label>
+                    </span> </span> &nbsp;
+                  <!-- TemplateEndEditable --><br>
+                  <div align="center" class="text_user">
+                    <input id="username" name="username" type="text" size="25">
+                  </div>
+                  <!-- TemplateBeginEditable name="Title4" -->
+                  <label for="password">
+                    <div align="center" class="style5">Password</div>
+                  </label>
+                  &nbsp;
+                  <!-- TemplateEndEditable --><br>
+                  <div align="center" class="text_pass">
+                    <input id="password" name="password" type="password" size="25">
+                  </div>
+                  <br>
+                  <div align="center" class="sing_in">
+                    <br>
+                    <input type="submit" name="ButtonName" value="Sing In">
+                  </div>
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+    </form>
+  </div>
+</body>
+
+</html>

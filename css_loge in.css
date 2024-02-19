@@ -1,0 +1,34 @@
+/* CSS Document */
+body
+{
+background-image:url(bg.png)
+}
+
+button
+{
+direction: rtl;
+margin: 0;
+box-sizing: content-box;
+-webkit-font-smoothing: antialiased;
+font-weight: bold;
+justify-content: center;
+position: relative;
+text-align: center;
+text-shadow: none;
+vertical-align: middle;
+transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+white-space: nowrap;
+border: none;
+border-radius: 6px;
+font-size: 21px;
+line-height: 48px;
+padding: 0 16px;
+width: 332px;
+border-color: #365899;
+text-decoration: none;
+background-color: #166fe5;
+font-family: inherit;
+}
